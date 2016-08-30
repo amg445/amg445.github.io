@@ -1,0 +1,140 @@
+body { margin: 0px; }
+
+.title, #logo { font-size: 36px; }
+.title img { width: 20px; visibility: hidden; }
+.title a:hover img { visibility: visible; }
+
+/*----------HEADER----------*/
+.header {
+    display: block;
+    background-color: #22264b;
+    color: white;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+    #logo {
+        display: block;
+        position: absolute;
+        margin: 0px;
+        left: 40px;
+        top: 40px;
+    }
+
+    #shot {
+        display: block;;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        border: 2px solid white;
+        width: 30%;
+    }
+
+    #links { text-align: center; }
+    #links ul { padding: 0px; }
+    .link {
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .link img { width: 35px; }
+/*----------END-HEADER----------*/
+
+/*----------CONTACT-ME----------*/
+#contactme {
+    display: block;
+    background-image: url(../assets/landscape.jpg);
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+@media only screen and (min-width: 1200px) {
+    #contactme { background-size: 100%; }
+}
+    #overlay {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(181,105,105, .7);
+        padding-bottom: 40px;
+    }
+
+    #overlay div {
+        display: block;
+        margin-left: 85px;
+        margin-top: 100px;
+    }
+    .title {
+        display: block;
+        margin: 0px;
+        position: absolute;
+        top: 40px;
+        left: 15px;
+    }
+
+    #contactme a { text-decoration: none; color: white; }
+    #contactme a:hover { text-decoration: underline; }
+/*----------END-CONTACT-ME----------*/
+
+/*----------PROJECTS----------*/
+#projects {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #1e3231;
+    position: relative;
+    color: white;
+}
+
+    #options ul li {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    #options ul { padding-left: 40px; }
+
+    .project-btn {
+        display: block;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        font-size: 16px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+
+    .project-btn:hover {
+        background-color: white;
+        border: 1px solid white;
+        color: #1e3231;
+    }
+
+    .project-btn:focus { outline: none; }
+
+    .project-btn.selected {
+        background-color: white;
+        border: 1px solid white;
+        color: #1e3231;
+    }
+
+    .project { margin-left: 40px; display: block; }
+    .project hr { width: 60%; margin-left: 0px; }
+
+    .project.hide { display: none; }
+
+    .github-link { text-decoration: none; color: white; font-size: 20px; }
+    .github-link:hover { text-decoration: underline; }
+    .small { font-size: 20px; }
+/*----------END-PROJECTS----------*/

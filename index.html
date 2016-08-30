@@ -2,9 +2,77 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="js/index.js"></script>
         <title>Andrew Grossfeld</title>
     </head>
     <body>
-        Hello World! 
+        <div class="header" id="header">
+            <h1 id="logo">amg.</h1>
+            <img id="shot" src="assets/headshot1.jpg">
+            <h2 id="tag">Andrew Michael Grossfeld</h2>
+            <div id="links">
+                    <ul>
+                        <li class="link"><a href="assets/resume.pdf"><img src="assets/resume.svg"></a></li>
+                        <li class="link"><a href="#projects"><img src="assets/projects.svg"></a></li>
+                        <li class="link"><a href="#contactme"><img src="assets/contact.svg"></a></li>
+                    </ul>
+            </div>
+        </div>
+
+        <div id="contactme">
+            <div id="overlay">
+                <h1 class="title"><a href="#header"><img src="assets/back.svg"></a> contact me.</h1>
+                <div>
+                    <h3>Phone: 415-686-2314</h3>
+                    <h3>Email: <a href="mailto:amg445@cornell.edu">amg445@cornell.edu</a></h3>
+                    <h3>Located in Ithaca, NY</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects">
+            <h1 class="title"><a href="#header"><img src="assets/back.svg"></a> projects.</h1>
+
+            <div id="options">
+                <ul>
+                    <li><button class="project-btn" id="minesweeper">MineSweeper DN</button></li>
+                    <li><button class="project-btn" id="malloc">Malloc</button></li>
+                    <li><button class="project-btn" id="microprocessor">Microprocessor</button></li>
+                    <li><button class="project-btn" id="bigredmaps">Big Red Maps</button></li>
+                    <li><button class="project-btn" id="spotibot">Spotibot</button></li>
+            </div>
+
+            <div class="project hide" id="malloc-body">
+                <h1 class="proj-title">Malloc - <a class="github-link" href="https://github.com/amg445/Malloc">view on github</a></h1>
+                <hr>
+                <p class="proj-summary">Implemented a dynamic memory allocating library in C</p>
+            </div>
+
+            <div class="project hide" id="microprocessor-body">
+                <h1 class="proj-title">Microprocessor</h1>
+                <hr>
+                <p class="proj-summary">Implemented a 5 stage pipelined microprocessor in Logisim</p>
+            </div>
+
+            <div class="project hide" id="minesweeper-body">
+                <h1 class="proj-title">MineSweeper DN - <a class="github-link" href="https://github.com/amg-lga-dev/Minesweeper-DN">view on github</a><span class="small"> or </span><a class="github-link" href="https://itunes.apple.com/us/app/minesweeper-dn/id1083262173?mt=8">iTunes</a></h1>
+                <hr>
+                <p class="proj-summary">Implemented a dynamic memory allocating library in C</p>
+            </div>
+
+            <div class="project hide" id="bigredmaps-body">
+                <h1 class="proj-title">Big Red Maps - in progress</h1>
+                <hr>
+                <p class="proj-summary">An iOS app integrated with the Google Maps SDK to give Cornell Students a personalized maps experience.</p>
+            </div>
+
+            <div class="project hide" id="spotibot-body">
+                <h1 class="proj-title">Spotibot - in progress</h1>
+                <hr>
+                <p class="proj-summary">A Facebook messenger bot that communicates with the Spotify API to allow friends to add songs to your playlist in Node.js.</p>
+            </div>
+        </div>
     </body>
 </html>
