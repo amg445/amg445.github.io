@@ -138,3 +138,82 @@ body { margin: 0px; }
     .github-link:hover { text-decoration: underline; }
     .small { font-size: 20px; }
 /*----------END-PROJECTS----------*/
+
+/*----------FOOTER----------*/
+
+#footer {
+    display: block;
+    background-color: #eee6df;
+    color: black;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+    #credits {
+        background-color: transparent;
+        border: none;
+    }
+    #credits:focus {
+        outline: none;
+    }
+
+    #credit-foldout.hide { display: none; }
+    #credit-foldout { display: block; }
+
+/*----------END-FOOTER----------*/
+
+/*----------Maintenance----------*/
+.maintenance {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-image: url("../assets/bridge.jpg");
+  background-size: 100%;
+}
+
+.overlay {
+  display: flex;
+  background-color: rgba(255,255,255,.5);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  align-items: center;
+}
+
+.maintenance .content {
+  display: block;
+  padding-top: 35px; padding-bottom: 65px;
+  width: 65%;
+  border: 4px solid white;
+  margin-left: auto; margin-right: auto;
+}
+
+.maintenance .content h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.r_btn {
+  display: block;
+  margin-left: auto; margin-right: auto;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 450px;
+  border: 2px solid white;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-family: 'Crimson Text', serif;
+}
+
+.r_btn:hover {
+  color: #88A6FF;
+  background-color: white;
+}

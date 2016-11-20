@@ -21,4 +21,17 @@ $(document).ready(function() {
         if (!$(id).hasClass("hide")) { $(id).addClass("hide"); }
         else { $(".project").addClass("hide"); $(id).removeClass("hide"); }
     });
+
+    $("#credits").on("click", function() {
+        if ($("#credits").hasClass("fold-out")) {
+            $("#credits").removeClass("fold-out")
+            $("#credits").text("Credits +");
+            $("#credit-foldout").addClass("hide");
+        }
+        else {
+            $("#credits").addClass("fold-out")
+            $("#credits").text("Credits -");
+            $("#credit-foldout").removeClass("hide");
+        }
+    });
 });
